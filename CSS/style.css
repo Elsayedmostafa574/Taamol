@@ -1,0 +1,450 @@
+    /* Global Styles */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: serif;
+}
+.head h1{
+    color: #5E5E5E;
+}
+.head div{
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    background-color: #000;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/home.jpg);
+    color: #fff;
+    position: relative;
+}
+.home nav{
+    padding-top: 30px;
+}
+.home nav .nav-link{
+    color: #fff;
+    margin-left: 40px;
+    transition: all 0.3s;
+}
+.home nav .nav-link:hover{
+    color: #284BE0 ;
+    border-bottom: 1px solid #284BE0;
+}
+@media (max-width:767px) {
+    nav{
+        background-color: #fff;
+    }
+    .home nav .nav-link{
+        color: #2F62E4;
+    }
+}
+
+.home .homeText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .homeText h1{
+    font-size: 60px;
+}
+.homeText .btnDiv{
+    width: 50%;
+    margin: auto;
+}
+.homeText .btn1{
+    background-color: #284BE0;
+    border: 3px solid #284BE0;
+    color: #fff;
+    font-size: 14px;
+}
+.homeText .btn2{
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+@media (max-width:768px){
+    .home .homeText h1{
+        font-size: 24px;
+    }
+    .homeText .btnDiv{
+        width: 100%;
+    }
+    .homeText .btn1{
+        margin-bottom: 10px;
+    }
+}
+
+/* invest */
+
+.invest{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.invest .investHead{
+    display: flex;
+    align-items: center;
+    
+}
+
+.invest .investHead .icon{
+    font-size: 50px;
+    color: #B6B6B6;
+    margin-left: 30px;
+}
+.invest .investHead p{
+    color: #2F62E4;
+}
+.invest .investHead h4{
+    font-weight: 600;
+}
+.invest .para{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    color: #686868;
+}
+.invest .btn{
+    width: 100%;
+    font-size: 13px;
+    color: #5E5E5E;
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: 1px solid #5E5E5E;
+    transition: 0.3s;
+}
+.invest .btn:hover{
+    background-color: #5E5E5E;
+    color: #fff;
+}
+@media (max-width: 676px){
+    .invest .investHead{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .invest .investHead .icon{
+        margin-left: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+/* burj */
+.burj{
+    padding-top: 100px;
+    background-color: #F0F0F0;
+}
+.burj .image{
+    width: 75%;
+    margin-right: auto; 
+}
+.burj .image img{
+    width: 100%;  
+}
+.burj .textHead h1{
+    font-family: serif;
+}
+.burj .textHead p{
+    color: #5E5E5E;
+    font-family: serif;
+}
+.burj button{
+    width: 150px;
+    padding: 15px 30px;
+    background-color: #284BE0;
+    color: #fff;
+    border: none;
+}
+@media (max-width:676px) {
+    .burj .image{
+        display: none;
+    }
+    .burj button{
+        margin-bottom: 20px;
+    }
+    
+}
+/* counter */
+.counterDiv{
+    background-color: #222;
+    color: #fff;
+}
+.counterDiv .icon{
+    color: #284BE0;
+}
+@media (max-width:676px) {
+    .counterDiv .mediaIcon{
+        display: block !important;
+    }
+    .counterDiv .icon{
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+
+.slider{
+    background: linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(../img/bg-slider.jpg);
+    background-size: cover;
+}
+.slider .item{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.slider .item img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+@media (max-width:767px) {
+    .slider .item{
+        width: 100%;
+    }
+}
+.team .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+.team .card img{
+    height: 300px;
+    border-radius: 0;
+}
+.team .card .blueDiv{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(40,75,224,0.5);
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+.team .card .blueDiv .fa-bars-staggered{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.team .card .card-body .card-text{
+    color: #284BE0;
+}
+@media (max-width:767px) {
+    .team .card{
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+/* Accordion */
+.accordionDiv{
+    background-color: #284BE0;
+}
+.accordionDiv .accordion{
+    margin-top: 100px;
+}
+.accordionDiv .accordion-item{
+    background-color: transparent;
+    border: none;
+    width: 450px;
+    margin: auto;
+}
+
+.accordionDiv .accordion .accordion-header .accordion-button{
+    background-color: #fff !important;
+    border-radius: 0%;
+    margin-bottom: 20px;
+}
+.accordionDiv .accordion-item .accordion-body{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+.accordionDiv h1{
+    margin-top: 100px;
+    color: #fff;
+    line-height: 2;
+}
+.accordionDiv ul{
+    list-style: none;
+    color: #fff;
+    width: 100%;
+    padding-right: 10px;
+}
+.accordionDiv ul li{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordionDiv ul li::before{
+    content: "\e6f0";
+    margin-left: 20px;
+    font-size: 14px;
+}
+@media (max-width:767px) {
+    .accordionDiv .accordion-item{
+        max-width: 300px;
+    }
+    .accordionDiv .accordion{
+        margin-top: 10px;
+    }
+    .accordionDiv h1{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+/* Bar */
+.bar{
+    height: 100vh;
+    background-color: #ebebeb; 
+}
+.bar .progressContent{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    text-align: center;
+  
+}
+
+.bar .progress{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 10px solid #284BE0;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.bar .progressContent p{
+    width: 50%;
+    margin: auto;
+    line-height: 2;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #797979;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bar .progress h6{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #5E5E5E;
+}
+
+.bar .image{
+   height: 100vh;
+}
+.bar .image img{
+    width: 100%;
+    height: 100%;
+    
+}
+@media (max-width:767px) {
+    .bar{
+        height: auto;
+    }
+    .bar .progressContent p{
+        width: 100%;
+    }
+    .bar .image{
+        height: 50vh;
+    }
+    .bar .image img{
+        border-radius: 20px;
+     }
+}
+/* Blog */
+
+.blog .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    position: relative;
+}
+.blog .card:hover{
+    transform: scale(1.02,1.02);
+}
+.blog .card-text{
+    color: #818181;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blog .blueBlog{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 2px 20px;
+    border-radius: 20px;
+    background-color: #284BE0;
+    text-align: center;
+}
+.blog .blueBlog span{
+    color: #fff;
+    font-size: 10px;
+}
+
+/* Brands */
+.brand{
+    background-color: #284BE0;
+}
+.brand img{
+    width: 100%;
+}
+.footer{
+    background-color: #2D2D2D;
+    color: #a4a4a4;
+}
+.footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .btn{
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+    transition: 0.3s;
+}
+.footer .btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.footer h6{
+    color: #fff;
+    font-weight: 800;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer  a{
+    color: #a4a4a4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer a:hover{
+    color: #fff;
+}
+.footer .image{
+    width: 70px;
+}
